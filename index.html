@@ -5,37 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MY Library</title>
     <link rel="Stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+   
 </head>
 <body>
     
      <header>My Books Shelv </header>
-     
-     <dialog  >
-        <form>
-            <div class="form-row">
-            <label>Title       :</label>
-            <input placeholder="title"  type="text">
-            </div>
-            <div class="form-row">
-            <label>Author      :</label>
-            <input placeholder="author" type="text">
-            </div>
-            <div class="form-row">
-            <label>No of pages :</label>
-            <input type="number" >
-            </div>
-            <div class="form-row">
-            <label>have you read:</label>
-            <input type="text">
-            </div>
-            <div class="btn">
-            <button type="submit">confirm</button>
-            <button type="generic">close</button>
-            </div>
-        </form>
+     <ul>
+     </ul>
+     <dialog>
+     <form id="form" >
+         <div class="form-row">
+           <label>Title:</label>
+           <input placeholder="title" id="title" type="text">
+         </div>
+         <div class="form-row">
+           <label>Author      :</label>
+           <input placeholder="author" id="author" type="text">
+         </div>
+         <div class="form-row">
+           <label>No of pages :</label>
+           <input type="number" id="pages">
+         </div>
+         <div class="form-row">
+           <label>have you read:</label>
+           <input type="text" id="readStatus">
+         </div>
+         <button type="submit" id="confirm">confirm</button>
+         <button id="close">close</button>
+     </form>
      </dialog>
      <button class="addbtn">Add a book to your Library</button>
-    
+     <script src="./script.js" type="module" defer></script>
 </body>
 </html>
